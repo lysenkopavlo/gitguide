@@ -260,15 +260,6 @@ graph LR;
 
 ```
 
-```mermaid
-graph LR;
-  touch_file_name--"git status"-->untracked;
-  untracked-->"git add"-->tracked/staged;
-  staged-->"git commit -m meaningful message"-->tracked/committed;
-  tracked-->some changes--> modified;
-
-```
-
 ## 13. Committing
 Best practice is to commit with short and meaningful messages between 30 and 72 symbols.
 
