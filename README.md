@@ -273,7 +273,7 @@ git commit -m "Add info about commits"
 git commit -m "LGS-239: fix typos in line #496"
 ```
 
-WHere 'LGS-239' - project or task name.
+Where 'LGS-239' - project or task name.
 
 ### git commit -m '<type>:<message>'
 Two possible types:
