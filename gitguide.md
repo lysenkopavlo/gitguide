@@ -19,6 +19,10 @@ git config --global user.name "put_your_name_here"
 git config --global user.email "put_your_email_here"
 ```
 
+```
+git config --global core.editor "put_vim_or_code_-w"
+```
+
 To check changes
 
 ```
@@ -212,6 +216,12 @@ In your **first time** do it like this:
 git push -u origin main
 ```
 
+or 
+
+```
+git push -u origin master
+```
+
 After first time this would be enough:
 
 ```
@@ -245,7 +255,7 @@ To make log short use:
 git log --oneline
 ```
 
-### 12.2 More git log
+### 12.2 More git log stuff
 
 To skyrocket your git log game use these commands
 
@@ -257,7 +267,7 @@ git log --all --oneline --graph
 git log --patch 
 ```
 
-### 12.3 File life cycle in Git.
+### 13. File life cycle in Git.
 There are several stages in file life...Here they are:
 1. Untracked.
 2. Tracked.
@@ -272,7 +282,7 @@ graph LR;
 
 ```
 
-## 13. Committing
+## 14. Committing
 Best practice is to commit with short and meaningful messages between 30 and 72 symbols.
 
 Examples:
