@@ -311,7 +311,7 @@ git commit -m 'feat: add sum counter'
 git commit -m 'fix: stack overflow'
 ``
 
-# 15 Adding changes to the **latest** commit
+# 15. Adding changes to the **latest** commit
 Add changes to the last commit and leave the message the same:
 
 ```
@@ -323,4 +323,23 @@ Change the message for the last commit to New message:
 
 ```
 git commit --amend -m "New message" 
+```
+
+# 16. Rolling back changes
+Transfer the hello.txt file from the staged state back to untracked or modified:
+
+```
+git restore --staged file_name.txt 
+```
+
+Return the hello.txt file to the latest version that was saved via git commit or git add :
+
+```
+git restore file_name.txt
+```
+
+Delete **all uncommitted changes** from staging and the “working area” up to the specified commit:
+
+```
+git reset --hard b576d89 (“reset”, “zeroing” + hard , “severe”) 
 ```
