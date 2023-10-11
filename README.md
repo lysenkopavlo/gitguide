@@ -1,4 +1,4 @@
-# The ultimate git guide for old dudes
+# The ultimate git guide 
 
 ## 1. First move
 Install Git for your OS.
@@ -245,7 +245,19 @@ To make log short use:
 git log --oneline
 ```
 
-### 12.2 File life cycle in Git.
+### 12.2 More git log
+
+To skyrocket your git log game use these commands
+
+```
+git log --all --oneline --graph 
+```
+
+```
+git log --patch 
+```
+
+### 12.3 File life cycle in Git.
 There are several stages in file life...Here they are:
 1. Untracked.
 2. Tracked.
