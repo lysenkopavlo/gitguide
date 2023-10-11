@@ -298,9 +298,10 @@ git commit -m "LGS-239: fix typos in line #496"
 Where 'LGS-239' - project or task name.
 
 ### git commit -m '<type>:<message>'
-Two possible types:
+Three possible types:
 1. feat if feature was add
 2. fix if something was fixed
+3. docs if added some info in documentation 
 
 ```
 git commit -m 'feat: add sum counter'
@@ -309,3 +310,17 @@ git commit -m 'feat: add sum counter'
 ```
 git commit -m 'fix: stack overflow'
 ``
+
+# 15 Adding changes to the **latest** commit
+Add changes to the last commit and leave the message the same:
+
+```
+git commit --amend --no-edit
+
+```
+
+Change the message for the last commit to New message:
+
+```
+git commit --amend -m "New message" 
+```
