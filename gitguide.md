@@ -213,7 +213,7 @@ It's time to deliver local file to remote repo.
 In your **first time** do it like this:
 
 ```
-git push -u origin main
+git push -u origin master
 ```
 
 or 
@@ -311,7 +311,7 @@ git commit -m 'feat: add sum counter'
 git commit -m 'fix: stack overflow'
 ```
 
-# 15. Adding changes to the **latest** commit
+## 15. Adding changes to the latest commit
 Add changes to the last commit and leave the message the same:
 
 ```
@@ -325,7 +325,7 @@ Change the message for the last commit to New message:Ad
 git commit --amend -m "New message" 
 ```
 
-# 16. Rolling back changes
+## 16. Rolling changes back
 Transfer the hello.txt file from the staged state back to untracked or modified:
 
 ```
@@ -343,3 +343,108 @@ Delete **all uncommitted changes** from staging and the “working area” up to
 ```
 git reset --hard b576d89 (“reset”, “zeroing” + hard , “severe”) 
 ```
+
+## 17. Branches
+### List all existed branches:
+
+```
+git branch --all
+```
+
+### Create a branch from the current one with the name branch_name:
+
+```
+git branch branch_name
+```
+
+Create a branch branch_name and immediately switch to it:
+
+```
+git checkout -b branch_name 
+```
+
+Other words - same result:
+
+```
+git switch -c branch_name
+```
+
+### Switch between branches:
+
+```
+git checkout branch_name
+```
+
+or 
+
+```
+git switch branch_name
+```
+
+### Removing branches
+Delete the br-name branch , but only if it is part of master:
+
+```
+git branch -d branch_name 
+```
+
+Delete the branch_name branch , even if it is not merged into master:
+
+```
+git branch -D branch_name 
+```
+
+### Merging branches
+Merge the master branch with the current active branch:
+
+```
+git merge master
+```
+
+## 18. Compare commits
+Show changes in the “working area”, that is, in modified files:
+
+```
+git diff 
+```
+
+Print the difference between two commits:
+
+```
+git diff a9928ab 11bada1 
+```
+
+Show changes that have been added to staged files:
+
+```
+git diff --staged 
+```
+
+## 19. Work with remote repo
+Push the branch with branch_name to the remote repository and link the local branch with the remote one, so that with additional commits you can simply write git push without -u:
+
+```
+git push -u origin branch_name
+```
+
+Push additional changes to the my-branch branch that already exists in the remote repository:
+
+```
+git push branch_name 
+```
+
+Pull changes to the current branch from a remote repository:
+
+```
+git pull 
+```
+
+## 20. Search
+
+## Cherry-pick
+
+## . Stashes
+
+## . Reference log
+
+## .TODO
